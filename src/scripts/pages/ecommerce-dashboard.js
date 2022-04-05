@@ -1,5 +1,6 @@
 import { docReady } from 'utils';
 import totalSalesChartInit from 'theme/charts/echarts/total-sales-chart';
+import totalSalesChart2Init from 'theme/charts/echarts/total-sales-chart-2';
 import newCustomersChartsInit from 'theme/charts/echarts/new-customers';
 import topCouponsChartInit from 'theme/charts/echarts/top-coupons-chart';
 import projectActualChartInit from 'theme/charts/echarts/project-vs-actual-chart';
@@ -8,6 +9,7 @@ import leafletTopRegionsInit from 'theme/leaflet-top-regions';
 import payingCustomerChartInit from 'theme/charts/chartjs/PayingCustomerChart';
 
 docReady(totalSalesChartInit);
+docReady(totalSalesChart2Init);
 docReady(newCustomersChartsInit);
 docReady(topCouponsChartInit);
 docReady(projectActualChartInit);

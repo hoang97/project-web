@@ -10,10 +10,8 @@ dayjs.extend(advancedFormat);
 /*                             Echarts Total Sales                            */
 /* -------------------------------------------------------------------------- */
 
-const totalSalesChartInit = () => {
-  const $totalSalesChart = document.querySelector(
-    '#chart-1 .echart-total-sales-chart'
-  );
+const totalSalesChart2Init = () => {
+  const $totalSalesChart = document.querySelector('#chart-2 .echart-total-sales-chart');
 
   const dates = getDates(
     new Date('5/1/2022'),
@@ -189,4 +187,4 @@ const totalSalesChartInit = () => {
   }
 };
 
-export default totalSalesChartInit;
+export default totalSalesChart2Init;

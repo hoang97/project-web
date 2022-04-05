@@ -14,24 +14,20 @@ append scripts
 
 block content
   .pb-5
+    .mb-8
+      h2.mb-2 Ecommerce Dashboard
+      h5.text-700.fw-semi-bold Here’s what’s going on at your business right now
     .row.g-5
       .col-12.col-xxl-6
-        .mb-8
-          h2.mb-2 Ecommerce Dashboard
-          h5.text-700.fw-semi-bold Here’s what’s going on at your business right now
         +Stats
         hr.bg-200.mb-6.mt-4
-        +TotalSalesChart
+        #chart-1
+         +TotalSalesChart
       .col-12.col-xxl-6
-        .row.g-3
-          .col-12.col-md-6
-            +TotalOrders
-          .col-12.col-md-6
-            +NewCustomers
-          .col-12.col-md-6
-            +TopCoupons
-          .col-12.col-md-6
-            +PayingCustomer
+        +Stats
+        hr.bg-200.mb-6.mt-4
+        #chart-2
+          +TotalSalesChart
   //- .mx-n6.bg-white.px-6.pt-7.border-y.border-300
   //-   .row
   //-     +LatestReviews
